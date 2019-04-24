@@ -1,0 +1,37 @@
+/* 
+    Created on : Jan 3, 2019, 1:27:03 PM
+    Author     : court
+*/
+img{
+    width: 100px;
+    height: 100px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+
+.PL1 {
+    float: left;
+    width:50%;
+    margin:auto;
+}
+
+.PL2 {
+    float: right; 
+    width:50%;
+    margin:auto;
+}
